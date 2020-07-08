@@ -16,7 +16,6 @@ body {
 }
 
 main {
-	gap: 1rem;
 	display: flex;
 	width: 70%;
 	justify-content: center;
@@ -25,6 +24,7 @@ main {
 }
 
 .social {
+	margin: 1rem;
 	background: $dark_blue;
 	padding: 5rem 5rem 5rem 5rem;
 	border-radius: 2rem;
@@ -50,9 +50,10 @@ main {
 	}
 }
 .storage {
+	margin: 1rem;
 	flex-basis: 350px;
 	background-color: $dark_blue;
-	padding: 5rem;
+	padding: 3rem 5rem;
 	border-radius: 2rem;
 	color: $pale_blue;
 	font-size: 1.6rem;
@@ -116,14 +117,14 @@ main {
 		position: absolute;
 		width: 35%;
 		bottom: 100%;
-		padding: 0.5rem 2rem;
+		padding: 0 2rem;
 		color: black;
 		background: white;
 		border-radius: 1rem;
 		border-bottom-right-radius: 0;
 		text-align: center;
 		bottom: 100%;
-		transform: translate(-100%, -100%);
+		transform: translate(-100%, -75%);
 		left: 100%;
 
 		h1 {
@@ -155,7 +156,7 @@ main {
 	}
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
 	body {
 		background: url('../images/bg-mobile.png');
 		background-size: cover;

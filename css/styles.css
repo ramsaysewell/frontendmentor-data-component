@@ -20,7 +20,6 @@ body {
 }
 
 main {
-  gap: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,6 +35,7 @@ main {
 }
 
 .social {
+  margin: 1rem;
   background: #1d2c67;
   padding: 5rem 5rem 5rem 5rem;
   border-radius: 2rem;
@@ -71,10 +71,11 @@ main {
 }
 
 .storage {
+  margin: 1rem;
   -ms-flex-preferred-size: 350px;
       flex-basis: 350px;
   background-color: #1d2c67;
-  padding: 5rem;
+  padding: 3rem 5rem;
   border-radius: 2rem;
   color: #dddbff;
   font-size: 1.6rem;
@@ -144,15 +145,15 @@ main {
   position: absolute;
   width: 35%;
   bottom: 100%;
-  padding: 0.5rem 2rem;
+  padding: 0 2rem;
   color: black;
   background: white;
   border-radius: 1rem;
   border-bottom-right-radius: 0;
   text-align: center;
   bottom: 100%;
-  -webkit-transform: translate(-100%, -100%);
-          transform: translate(-100%, -100%);
+  -webkit-transform: translate(-100%, -75%);
+          transform: translate(-100%, -75%);
   left: 100%;
 }
 
@@ -190,7 +191,7 @@ main {
   right: 0;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   body {
     background: url("../images/bg-mobile.png");
     background-size: cover;
