@@ -143,7 +143,6 @@ main {
 
 .storage .tooltip {
   position: absolute;
-  width: 35%;
   bottom: 100%;
   padding: 0 2rem;
   color: black;
@@ -176,6 +175,7 @@ main {
 }
 
 .storage .tooltip .gb {
+  white-space: nowrap;
   margin-left: 0.5rem;
   font-size: 30%;
   color: #848794;
