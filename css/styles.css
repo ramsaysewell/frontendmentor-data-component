@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background: url("../images/bg-desktop.png") no-repeat bottom #0c122c;
+  font-family: 'Raleway';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+}
+
+main {
+  gap: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.social {
+  background: #1d2c67;
+  padding: 5rem 5rem 5rem 5rem;
+  border-radius: 2rem;
+  border-top-right-radius: 10rem;
+  -ms-flex-preferred-size: 200px;
+      flex-basis: 200px;
+}
+
+.social div {
+  padding: 1rem 0;
+}
+
+.social .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.social .links a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0c122c;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 0 1rem 0 0;
+}
+
+.storage {
+  -ms-flex-preferred-size: 350px;
+      flex-basis: 350px;
+  background-color: #1d2c67;
+  padding: 5rem;
+  border-radius: 2rem;
+  color: #dddbff;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+.storage .total {
+  color: #ccc;
+}
+
+.storage .total .amount {
+  font-weight: bold;
+}
+
+.storage .trackWrapper {
+  position: relative;
+}
+
+.storage .track {
+  width: 100%;
+  height: 15px;
+  background: #0c122c;
+  border-radius: 15rem;
+  padding: 0.1rem;
+  display: block;
+  position: relative;
+}
+
+.storage .progress {
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 75%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#ffa399), to(#ff4d97));
+  background: linear-gradient(to right, #ffa399, #ff4d97);
+  border-radius: 15rem;
+  position: relative;
+}
+
+.storage .point {
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  left: 100%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.storage .minmax {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem 0 0;
+  padding: 0;
+  font-size: 1.3rem;
+  list-style: none;
+}
+
+.storage .tooltip {
+  position: absolute;
+  width: 35%;
+  bottom: 100%;
+  padding: 0.5rem 2rem;
+  color: black;
+  background: white;
+  border-radius: 1rem;
+  border-bottom-right-radius: 0;
+  text-align: center;
+  bottom: 100%;
+  -webkit-transform: translate(-100%, -100%);
+          transform: translate(-100%, -100%);
+  left: 100%;
+}
+
+.storage .tooltip h1 {
+  font-size: 4rem;
+  padding: 1rem;
+  margin: 0;
+}
+
+.storage .tooltip .big-total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.storage .tooltip .gb {
+  margin-left: 0.5rem;
+  font-size: 30%;
+  color: #848794;
+}
+
+.storage .tooltip::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 30px solid white;
+  border-left: 25px solid transparent;
+  right: 0;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background: url("../images/bg-mobile.png");
+    background-size: cover;
+  }
+  main {
+    width: 90%;
+  }
+  .social {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .storage .tooltip {
+    bottom: auto;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+    border-bottom-right-radius: 1rem;
+    width: 50%;
+    padding: 0.5rem;
+  }
+  .storage .tooltip::after {
+    display: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

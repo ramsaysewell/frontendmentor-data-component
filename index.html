@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="css/styles.css" />
+		<title>Frontend Mentor | Fylo data storage component</title>
+	</head>
+	<body>
+		<main>
+			<section class="social">
+				<div class="logo">
+					<img src="/images/logo.svg" alt="Fylo Logo" />
+				</div>
+				<div class="links">
+					<a href="#">
+						<img src="/images/icon-document.svg" alt="Document" />
+					</a>
+					<a href="#">
+						<img src="/images/icon-folder.svg" alt="Folder" />
+					</a>
+					<a href="#">
+						<img src="/images/icon-upload.svg" alt="Upload" />
+					</a>
+				</div>
+			</section>
+			<section class="storage">
+				<div class="total">
+					<p>
+						You've used <span class="amount">815 GB</span> of your
+						storage.
+					</p>
+				</div>
+				<div class="trackWrapper">
+					<div class="track">
+						<div class="progress">
+							<span class="point"></span>
+						</div>
+					</div>
+					<ul class="minmax">
+						<li class="min">0 GB</li>
+						<li class="max">1000 GB</li>
+					</ul>
+					<div class="tooltip">
+						<h1 class="big-total">
+							<span class="number">185</span>
+							<span class="gb">GB LEFT</span>
+						</h1>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
